@@ -1,4 +1,44 @@
-@media(min-width: 1200px) and (max-width: 1400px) {}
+@media(min-width: 1200px) and (max-width: 1400px) {
+    svg.numero-908 {
+        left: -10%;
+    }
+    .navbar-default {
+        padding: 30px 0 0 0;
+    }
+    .navbar-brand>img {
+        width: 260px;
+    }
+    .navbar-default .navbar-nav>li>a {
+        margin: 16px 30px;
+        font-size: 14px;
+    }
+    .navbar-default .navbar-nav>li>a:focus,
+    .navbar-default .navbar-nav>li>a:hover {
+        color: #F07A18;
+        border-bottom: 4px solid #F07A18;
+        font-weight: 700;
+    }
+    .banner-principal-texto-left h3 {
+        width: 220px;
+        height: 33px;
+        font-size: 17px;
+    }
+    .banner-principal-texto-left h1 {
+        font-size: 24px;
+    }
+    .banner-principal-texto-left h1 span {
+        font-size: 95px;
+    }
+    .banner-principal-texto-left i {
+        width: 70px;
+        height: 70px;
+        background-size: 100%;
+    }
+    .banner-principal-texto-right {
+        width: 485px;
+        float: right;
+    }
+}
 
 @media(min-width: 1200px) and (max-width: 1600px) {}
 
