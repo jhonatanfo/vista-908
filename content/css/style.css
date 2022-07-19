@@ -3,6 +3,7 @@
 html,
 body {
     font-family: 'Raleway';
+    overflow-x: hidden;
 }
 
 .sem-espaco {
@@ -11,24 +12,24 @@ body {
 }
 
 svg.numero-908 {
-    stroke-width: 2px;
     stroke: white;
     width: 100%;
     height: 100%;
-    stroke-dashoffset: 1000;
-    stroke-dasharray: 1000;
-    animation: svganimation 5s ease-in-out forwards;
-    fill: none;
     position: absolute;
     left: 2%;
     width: 13%;
     height: 840px;
+    stroke-width: 2px;
+    stroke-dashoffset: 1000;
+    stroke-dasharray: 1000;
+    fill: none;
     animation-delay: 2s;
+    animation: svganimation 5s ease-in-out forwards;
 }
 
 .numero-908 path {
     fill: none;
-    animation: fillds 5s ease-in-out forwards;
+    animation: kksfillds 5s ease-in-out forwards;
     transition: 0.5s;
     fill-opacity: 0;
     animation-delay: 2s;
@@ -96,7 +97,6 @@ svg.numero-908 {
     transition: 0.2s;
     font-size: 15px;
     line-height: 92.45%;
-    /* identical to box height, or 14px */
     text-transform: uppercase;
     font-weight: 500;
 }
@@ -106,18 +106,17 @@ svg.numero-908 {
     float: right;
 }
 
-.navbar-default .navbar-nav>li>a:focus,
-.navbar-default .navbar-nav>li>a:hover {
-    color: #fac100;
-    border-bottom: 4px solid #fac100;
+.navbar-default .navbar-nav>li>a span {
+    width: 0;
+    height: 4px;
+    background: #f07a18;
+    display: block;
+    margin-top: 11px;
+    transition: 0.2s;
 }
 
-.navbar-default .navbar-nav li::before a:hover {
-    content: "";
-    width: 200px;
-    height: 50px;
-    background: #ebc021;
-    position: absolute;
+.navbar-default .navbar-nav li a:hover span {
+    width: 100%;
 }
 
 .navbar-brand {
@@ -126,6 +125,12 @@ svg.numero-908 {
 
 .navbar-toggle {
     z-index: 3;
+}
+
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover {
+    color: #F07A18;
+    font-weight: 700;
 }
 
 .bg-banner-principal {
@@ -271,15 +276,15 @@ svg.numero-908 {
     background-image: url("../img/icon-metragem.png");
 }
 
-::-webkit-input-placeholder {
+ ::-webkit-input-placeholder {
     color: white !important;
 }
 
-:-ms-input-placeholder {
+ :-ms-input-placeholder {
     color: white !important;
 }
 
-::placeholder {
+ ::placeholder {
     color: white !important;
 }
 
@@ -299,14 +304,12 @@ svg.numero-908 {
 /* vvv */
 
 select {
-    /* styling */
     width: 100%;
     background-color: transparent;
     color: white;
     display: inline-block;
     line-height: 1.5em;
     padding: 0.5em 3.5em 0.5em 1em;
-    /* reset */
     margin: 0;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -371,4 +374,160 @@ select option:hover {
     width: 100%;
     border: none;
     margin-top: 30px;
+}
+
+
+/*****/
+
+.bg-barra-info {
+    height: 171px;
+    background: #132C1D;
+    padding: 46px 0;
+}
+
+.bg-barra-info .box-barra-info {
+    border-right: 1px solid #CABB9C;
+    height: 81px;
+    padding: 0 0 0 0;
+}
+
+.bg-barra-info .box-barra-info.border-none {
+    border: none
+}
+
+.bg-barra-info .box-barra-info h2 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    color: #FFFFFF;
+    line-height: 34px;
+    margin: 9px 0;
+}
+
+.bg-barra-info .box-barra-info h2 span {
+    color: #F07A18;
+    font-weight: 900;
+}
+
+.bg-barra-info .box-barra-info p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 38px;
+    color: #FFFFFF;
+    margin-bottom: 0;
+    padding: 0px 80px 11px 80px;
+}
+
+.bg-barra-info .box-barra-info p b {
+    font-weight: 700;
+}
+
+.bg-barra-info .box-barra-info h3 span {
+    width: 105px;
+    height: 6px;
+    background: #F07A18;
+    display: block;
+    margin-top: -11px;
+}
+
+.bg-barra-info .box-barra-info h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 92.45%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 9px 0 0 61px;
+}
+
+.bg-barra-info .box-barra-info h3 b {
+    font-family: 'Abhaya Libre';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 55px;
+    color: #FFFFFF;
+}
+
+
+/********/
+
+.bg-projetos {
+    padding: 150px 0;
+}
+
+.bg-projetos h2 {
+    font-family: 'Abhaya Libre';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 100px;
+    line-height: 120px;
+    color: #2B3427;
+}
+
+.bg-projetos p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140.4%;
+    color: #000000;
+}
+
+.bg-projetos p span {
+    color: #F07A18;
+}
+
+.bg-projetos img {
+    width: 120%;
+    display: block;
+    z-index: 1;
+    position: relative;
+}
+
+.projetos-info {
+    background: url("../img/bg-projeto.jpg");
+    padding: 83px 0 50px 8%;
+    margin-top: -110px;
+}
+
+.projetos-info ul {
+    padding: 0;
+}
+
+.projetos-info ul li {
+    padding: 0;
+    list-style: none;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 104.4%;
+    color: #FFFFFF;
+    margin: 32px 0;
+}
+
+.projetos-info ul li i {
+    width: 25px;
+    height: 25px;
+    margin-right: 25px;
+    float: left;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.projetos-info ul li i.icon-condominio {
+    background-image: url("../img/icon-condominio.png");
+}
+
+.projetos-info ul li i.icon-area {
+    background-image: url("../img/icon-area.png");
+}
+
+.projetos-info ul li i.icon-dorm {
+    background-image: url("../img/icon-dorm.png");
+}
+
+.projetos-info ul li i.icon-vaga {
+    background-image: url("../img/icon-vaga.png");
 }

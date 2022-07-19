@@ -61,8 +61,11 @@ $(document).ready(function() {
 
 $(document).on("scroll", function() {
     if ($(document).scrollTop() > 105) { //QUANDO O SCROLL PASSAR DOS 100px DO TOPO
+
         $(".navbar").removeClass("large").addClass("small"); //TROCA P CLASSE MENOR
     } else {
+
+
         $(".navbar").removeClass("small").addClass("large"); //VOLTA P MENU GRANDE ORIGINAL
     }
 });
