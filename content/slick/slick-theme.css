@@ -58,7 +58,7 @@
 }
 
 .slick-prev {
-    left: 10%;
+    left: 180px;
 }
 
 [dir='rtl'] .slick-prev {
@@ -67,7 +67,7 @@
 }
 
 .slick-next {
-    left: 16%;
+    left: 285px;
 }
 
 .produtos .slick-prev,
@@ -194,10 +194,65 @@
     top: 50%;
 }
 
-@media(min-width: 1200px) and (max-width: 1600px) {}
+@media(min-width: 1200px) and (max-width: 1400px) {}
 
-@media(min-width: 992px) and (max-width: 1199px) {}
+@media(min-width: 992px) and (max-width: 1199px) {
+    .slick-prev {
+        width: 60px;
+        height: 60px;
+        background-size: cover;
+    }
+    .slick-next {
+        width: 60px;
+        height: 60px;
+        background-size: cover;
+    }
+    .slick-prev {
+        left: 140px;
+    }
+    .slick-next {
+        left: 220px;
+    }
+}
 
-@media(min-width: 768px) and (max-width: 991px) {}
+@media(min-width: 768px) and (max-width: 991px) {
+    .slick-prev {
+        width: 60px;
+        height: 60px;
+        background-size: cover;
+    }
+    .slick-next {
+        width: 60px;
+        height: 60px;
+        background-size: cover;
+    }
+    .slick-prev {
+        left: 50%;
+        margin-left: -60px;
+    }
+    .slick-next {
+        left: 50%;
+        margin-left: 8px;
+    }
+}
 
-@media(min-width: 0px) and (max-width: 767px) {}
+@media(min-width: 0px) and (max-width: 767px) {
+    .slick-prev {
+        width: 60px;
+        height: 60px;
+        background-size: cover;
+    }
+    .slick-next {
+        width: 60px;
+        height: 60px;
+        background-size: cover;
+    }
+    .slick-prev {
+        left: 50%;
+        margin-left: -60px;
+    }
+    .slick-next {
+        left: 50%;
+        margin-left: 8px;
+    }
+}

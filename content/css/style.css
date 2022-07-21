@@ -17,6 +17,7 @@ svg.numero-908 {
     height: 100%;
     position: absolute;
     left: 2%;
+    top: 5px;
     width: 14%;
     height: 840px;
     stroke-width: 2px;
@@ -136,8 +137,9 @@ svg.numero-908 {
 .bg-banner-principal {
     background: url("../img/banner-principal.jpg") no-repeat center / cover;
     width: 100%;
-    height: 840px;
+    height: 857px;
     display: block;
+    padding-top: 128px;
 }
 
 .banner-principal-texto-left {
@@ -203,7 +205,7 @@ svg.numero-908 {
     background: rgba(19, 44, 29, 0.9);
     backdrop-filter: blur(10px);
     height: 632px;
-    margin-top: 50px;
+    margin-top: 63px;
     padding: 20px 70px;
     width: 508px;
     float: right;
@@ -491,12 +493,14 @@ select option:hover {
 
 .projetos-info {
     background: url("../img/bg-projeto.jpg");
-    padding: 83px 0 50px 20%;
+    padding: 83px 0 50px 0;
     margin-top: -110px;
 }
 
 .projetos-info ul {
     padding: 0;
+    width: 572px;
+    float: right;
 }
 
 .projetos-info ul li {
@@ -551,7 +555,7 @@ select option:hover {
 .bg-galeria-fotos .slick-galeria-fotos .box-galeria-fotos img {
     width: 100%;
     object-fit: cover;
-    height: 606px;
+    height: 510px;
     transition: transform 0.2s;
 }
 
@@ -621,6 +625,7 @@ footer {
 footer img {
     margin: 0 auto;
     padding: 20px 0;
+    display: block;
 }
 
 footer .redes-sociais {
@@ -721,4 +726,25 @@ footer p {
     color: #FFFFFF;
     text-align: center;
     padding: 20px 0;
+}
+
+nav.navbar.navbar-default.small {
+    position: fixed;
+    top: 0;
+    background: #132c1d;
+    height: 94px;
+    padding: 14px 0;
+    -webkit-box-shadow: 0 6px 13px rgb(0 0 0 / 26%);
+    -moz-box-shadow: 0 6px 13px rgb(0 0 0 / 26%);
+    box-shadow: 0 6px 13px rgb(0 0 0 / 26%);
+    border-radius: 0;
+}
+
+nav.navbar.navbar-default.large {
+    position: absolute;
+    top: 0;
+}
+
+nav.navbar.navbar-default.small .logo {
+    width: 74%;
 }

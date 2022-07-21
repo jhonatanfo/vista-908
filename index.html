@@ -25,12 +25,7 @@
 
 <body>
 
-
-
-    <header class="bg-banner-principal">
-
-
-
+    <header class="bg-banner-principal" id="contato">
 
         <svg class="numero-908" width="202" height="785" viewBox="0 0 202 785" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_40_95)">
@@ -46,8 +41,6 @@
             </defs>
         </svg>
 
-
-
         <nav class="navbar navbar-default large" role="navigation">
             <div class="container">
                 <div class="navbar-header">
@@ -62,23 +55,26 @@
                 </a>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li><a href="">O PROJETO<span></span></a></li>
-                        <li><a href="">FOTOS<span></span></a></li>
-                        <li><a href="">LOCALIZAÇÃO<span></span></a></li>
-                        <li><a href="">CONTATO<span></span></a></li>
+                        <li><a href="#projetos">O PROJETO<span></span></a></li>
+                        <li><a href="#fotos">FOTOS<span></span></a></li>
+                        <li><a href="#localizacao">LOCALIZAÇÃO<span></span></a></li>
+                        <li><a href="#contato">CONTATO<span></span></a></li>
                     </ul>
                 </div>
             </div>
         </nav>
+
         <div class="container">
             <div class="row">
-                <div class="col-md-6 banner-principal-texto-left">
+                <div class="col-xs-12 col-sm-6 col-md-6 banner-principal-texto-left" data-aos="zoom-in">
                     <h3>breve lançamento</h3>
                     <h1>você merece<br><span>o melhor!</span></h1>
-                    <p>Conheça o Vista 908 e <b>apaixone-se</b> pela<br>sua próxima residência!</p>
-                    <i></i>
+                    <p>Conheça o Vista 908 e <b>apaixone-se</b> pela<br class="hidden-xs">sua próxima residência!</p>
+                    <a href="#projetos">
+                        <i></i>
+                    </a>
                 </div>
-                <div class="col-md-6">
+                <div class="col-xs-12 col-sm-6 col-md-6" data-aos="zoom-in">
                     <div class="banner-principal-texto-right">
                         <h2>Entre em Contato</h2>
                         <form action="" method="post">
@@ -118,7 +114,7 @@
     <section class="bg-barra-info">
         <div class="container">
             <div class="row">
-                <div class="col-md-4 box-barra-info">
+                <div class="col-xs-12 col-sm-4 col-md-4 box-barra-info" data-aos="fade-in" data-aos-duration="500">
                     <h2>
                         Lançamento<br>
                         <span>
@@ -126,10 +122,10 @@
                         </span>
                     </h2>
                 </div>
-                <div class="col-md-4 box-barra-info">
+                <div class="col-xs-12 col-sm-4 col-md-4 box-barra-info" data-aos="fade-in" data-aos-duration="1000">
                     <p><b>Rooftop</b><br>Bairro <b>Arborizado</b></p>
                 </div>
-                <div class="col-md-4 box-barra-info border-none">
+                <div class="col-xs-12 col-sm-4 col-md-4 box-barra-info border-none" data-aos="fade-in" data-aos-duration="1500">
                     <h3>
                         <span></span><br> A PARTIR DE<br>
                         <b>R$ 4.600.000,00</b>
@@ -139,21 +135,23 @@
         </div>
     </section>
 
-    <section class="bg-projetos">
+
+
+    <section class="bg-projetos" id="projetos">
         <div class="container">
             <div class="row">
-                <div class="col-md-5">
+                <div class="col-xs-12 col-sm-5 col-md-5" data-aos="zoom-in">
                     <h2>Projeto</h2>
                     <p>Tenha todas as facilidades de morar em uma das principais regiões de São Paulo aliada com a tranquilidade de um bairro residencial e arborizado!</p>
                     <p><span>Próximo a Estações de Metrô, Escolas, Parques, Shoppings, Restaurante e muito mais!</span></p>
                 </div>
-                <div class="col-md-7">
+                <div class="col-xs-12 col-sm-7 col-md-7" data-aos="zoom-in">
                     <img src="content/img/projeto.png">
                 </div>
             </div>
         </div>
-        <div class="col-md-6 projetos-info">
-            <ul>
+        <div class="col-xs-12 col-sm-6 col-md-6 projetos-info">
+            <ul data-aos="zoom-in">
                 <li><i class="icon-condominio"></i>Condomínio com 6 casas</li>
                 <li><i class="icon-area"></i>399 m² a 546 m² de área privativa</li>
                 <li><i class="icon-dorm"></i>4 dorms c/suíte</li>
@@ -163,36 +161,33 @@
 
     </section>
 
-
-    <section class="bg-galeria-fotos">
+    <section class="bg-galeria-fotos" id="fotos">
         <div class="slick-galeria-fotos list-unstyled" id="lightgallery">
-            <div class="box-galeria-fotos" data-src="content/img/galeria-01.jpg">
+            <div class="box-galeria-fotos" data-src="content/img/galeria-01.jpg" data-aos="zoom-in" data-aos-duration="500">
                 <img src="content/img/galeria-01.jpg">
             </div>
-            <div class="box-galeria-fotos" data-src="content/img/galeria-02.jpg">
+            <div class="box-galeria-fotos" data-src="content/img/galeria-02.jpg" data-aos="zoom-in" data-aos-duration="1000">
                 <img src="content/img/galeria-02.jpg">
             </div>
-            <div class="box-galeria-fotos" data-src="content/img/galeria-03.jpg">
+            <div class="box-galeria-fotos" data-src="content/img/galeria-03.jpg" data-aos="zoom-in" data-aos-duration="1500">
                 <img src="content/img/galeria-03.jpg">
             </div>
-            <div class="box-galeria-fotos" data-src="content/img/banner-principal.jpg">
+            <div class="box-galeria-fotos" data-src="content/img/banner-principal.jpg" data-aos="zoom-in" data-aos-duration="500">
                 <img src="content/img/banner-principal.jpg">
             </div>
 
         </div>
     </section>
 
-
-
-    <section class="bg-localizacao">
+    <section class="bg-localizacao" id="localizacao">
         <div class="container">
             <div class="row">
-                <div class="col-md-8">
+                <div class="col-xs-12 col-sm-7 col-md-8" data-aos="zoom-in">
                     <span class="mapa"></span>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1827.4740966065408!2d-46.68635139921707!3d-23.642026299999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5061fcf49955%3A0x5399445bf8fe57f!2sR.%20das%20Barcas%2C%20908%20-%20Santo%20Amaro%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004641-070!5e0!3m2!1spt-PT!2sbr!4v1658363639465!5m2!1spt-PT!2sbr"
                         style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-                <div class="col-md-4">
+                <div class="col-xs-12 col-sm-5 col-md-4" data-aos="zoom-in">
                     <h2>Localização<br>Privilegiada!</h2>
                     <p>1,3 km da Av. professor Vicente Rao</p>
                     <p>800 m da Praça Prof. Antônio Guariglia</p>
@@ -204,14 +199,13 @@
         </div>
     </section>
 
-
     <footer>
         <div class="container border-bottom">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-xs-12 col-sm-4 col-md-4">
                     <img src="content/img/logo.png">
                 </div>
-                <div class="col-md-4">
+                <div class="col-xs-12 col-sm-4 col-md-4">
                     <ul class="redes-sociais">
                         <li>
                             <a href=""><i class="icon-instagram-rodape"></i></a>
@@ -224,7 +218,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-4">
+                <div class="col-xs-12 col-sm-4 col-md-4">
                     <ul class="footer-informacoes">
                         <li><i class="icon-telefone-rodape"></i> (11) 91371-2344</li>
                         <li><i class="icon-email-rodape"></i> contato@vista908.com.br</li>
@@ -241,8 +235,6 @@
             </div>
         </div>
     </footer>
-
-
 
     <script src="content/js/jquery.min.js"></script>
     <script src="content/js/bootstrap.min.js"></script>

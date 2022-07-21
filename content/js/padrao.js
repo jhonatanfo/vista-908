@@ -6,6 +6,13 @@ $(document).on('ready', function() {
         focusOnSelect: true,
         arrow: true,
         infinite: true,
+        responsive: [{
+            breakpoint: 767,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }]
     });
 });
 
@@ -14,13 +21,13 @@ $(document).ready(function() {
         $(".navbar-collapse.collapse").removeClass("in");
     });
 
-    $('.nav li a[href^="#"],.seta-top[href^="#"]').on('click', function(e) {
+    $('.nav li a[href^="#"], .banner-principal-texto-left a[href^="#"]').on('click', function(e) {
         e.preventDefault();
         var id = $(this).attr('href'),
             targetOffset = $(id).offset().top;
 
         $('html, body').animate({
-            scrollTop: targetOffset - 105
+            scrollTop: targetOffset - 100
         }, 800);
     });
 });
