@@ -17,7 +17,7 @@ svg.numero-908 {
     height: 100%;
     position: absolute;
     left: 2%;
-    width: 13%;
+    width: 14%;
     height: 840px;
     stroke-width: 2px;
     stroke-dashoffset: 1000;
@@ -29,7 +29,7 @@ svg.numero-908 {
 
 .numero-908 path {
     fill: none;
-    animation: kksfillds 5s ease-in-out forwards;
+    animation: fillds 5s ease-in-out forwards;
     transition: 0.5s;
     fill-opacity: 0;
     animation-delay: 2s;
@@ -204,7 +204,9 @@ svg.numero-908 {
     backdrop-filter: blur(10px);
     height: 632px;
     margin-top: 50px;
-    padding: 20px 50px;
+    padding: 20px 70px;
+    width: 508px;
+    float: right;
 }
 
 .banner-principal-texto-right::before {
@@ -231,7 +233,7 @@ svg.numero-908 {
 .banner-principal-texto-right form label,
 .banner-principal-texto-right form label input {
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 13px;
 }
 
 .banner-principal-texto-right form label input {
@@ -306,7 +308,7 @@ svg.numero-908 {
 select {
     width: 100%;
     background-color: transparent;
-    color: white;
+    color: #a7b0ab;
     display: inline-block;
     line-height: 1.5em;
     padding: 0.5em 3.5em 0.5em 1em;
@@ -477,6 +479,7 @@ select option:hover {
 
 .bg-projetos p span {
     color: #F07A18;
+    font-weight: 600;
 }
 
 .bg-projetos img {
@@ -488,7 +491,7 @@ select option:hover {
 
 .projetos-info {
     background: url("../img/bg-projeto.jpg");
-    padding: 83px 0 50px 8%;
+    padding: 83px 0 50px 20%;
     margin-top: -110px;
 }
 
@@ -530,4 +533,192 @@ select option:hover {
 
 .projetos-info ul li i.icon-vaga {
     background-image: url("../img/icon-vaga.png");
+}
+
+
+/***/
+
+.bg-galeria-fotos {
+    padding: 300px 0 80px 0;
+}
+
+.bg-galeria-fotos .slick-galeria-fotos .box-galeria-fotos {
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+
+.bg-galeria-fotos .slick-galeria-fotos .box-galeria-fotos img {
+    width: 100%;
+    object-fit: cover;
+    height: 606px;
+    transition: transform 0.2s;
+}
+
+.bg-galeria-fotos .slick-galeria-fotos .box-galeria-fotos:hover img {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.box-galeria-fotos.slick-slide {
+    margin: 0 10px;
+}
+
+.bg-galeria-fotos .slick-list.draggable {
+    padding: 0 !important;
+}
+
+
+/* **** */
+
+.bg-localizacao {
+    padding: 130px 0;
+}
+
+.bg-localizacao iframe {
+    width: 93%;
+    height: 398px;
+}
+
+.mapa {
+    content: "";
+    position: absolute;
+    width: 89%;
+    height: 398px;
+    border: 3px solid #CABB9C;
+    top: -20px;
+    left: 2px;
+    z-index: -1;
+}
+
+.bg-localizacao h2 {
+    margin-bottom: 44px;
+    font-family: 'Abhaya Libre';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 60px;
+    color: #2B3427;
+}
+
+.bg-localizacao p {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 132.9%;
+    color: #2B3427;
+    margin-bottom: 23px;
+}
+
+
+/*****/
+
+footer {
+    height: 402px;
+    background: #132C1D;
+}
+
+footer img {
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+footer .redes-sociais {
+    padding: 0;
+    height: 24px;
+    width: 222px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+footer .redes-sociais li {
+    list-style: none;
+    float: left;
+}
+
+footer .redes-sociais li a i {
+    width: 24px;
+    height: 24px;
+    float: left;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 25px;
+    transition: 0.2s;
+}
+
+footer .redes-sociais li a i.icon-instagram-rodape {
+    background-image: url("../img/icon-instagram.png");
+}
+
+footer .redes-sociais li a:hover i.icon-instagram-rodape {
+    background-image: url("../img/icon-instagram-hover.png");
+}
+
+footer .redes-sociais li a i.icon-facebook-rodape {
+    background-image: url("../img/icon-facebook.png");
+}
+
+footer .redes-sociais li a:hover i.icon-facebook-rodape {
+    background-image: url("../img/icon-facebook-hover.png");
+}
+
+footer .redes-sociais li a i.icon-whatsapp-rodape {
+    background-image: url("../img/icon-whatsapp.png");
+}
+
+footer .redes-sociais li a:hover i.icon-whatsapp-rodape {
+    background-image: url("../img/icon-whatsapp-hover.png");
+}
+
+footer .footer-informacoes {
+    padding: 0;
+}
+
+footer .footer-informacoes li {
+    list-style: none;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 140.4%;
+    color: #FFFFFF;
+    margin-bottom: 18px;
+}
+
+footer .footer-informacoes li i {
+    width: 24px;
+    height: 24px;
+    float: left;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 2px 22px 0 0;
+}
+
+footer .footer-informacoes li i.icon-telefone-rodape {
+    background-image: url("../img/icon-telefone-rodape.png");
+}
+
+footer .footer-informacoes li i.icon-email-rodape {
+    background-image: url("../img/icon-email-rodape.png");
+}
+
+footer .footer-informacoes li i.icon-endereco-rodape {
+    background-image: url("../img/icon-endereco-rodape.png");
+}
+
+footer .border-bottom {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+    padding: 75px 0;
+}
+
+footer p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 29px;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px 0;
 }
