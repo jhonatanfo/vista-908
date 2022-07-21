@@ -170,6 +170,7 @@
     height: 85px;
     float: left;
     z-index: 2;
+    background-size: cover;
 }
 
 .slick-next {
@@ -179,14 +180,17 @@
     height: 85px;
     float: right;
     z-index: 2;
+    background-size: cover;
 }
 
 .slick-prev:hover {
     background: url(../img/arrow-left-hover.png);
+    background-size: cover;
 }
 
 .slick-next:hover {
     background: url(../img/arrow-right-hover.png);
+    background-size: cover;
 }
 
 .slide-fotos .slick-prev,

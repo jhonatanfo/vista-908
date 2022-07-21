@@ -279,6 +279,9 @@
     footer .border-bottom {
         padding: 46px 0;
     }
+    .bg-localizacao {
+        padding: 58px 0;
+    }
 }
 
 @media(min-width: 0px) and (max-width: 767px) {
